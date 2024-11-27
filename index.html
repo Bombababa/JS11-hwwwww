@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>тітле</title>
+    <style>
+        .green { color: green; }
+    </style>
+</head>
+<body>
+    <script src="./js.js"></script>
+    <!--1-->
+    <h2>Рахунок</h2>
+    <p id="balance">Баланс: 0 грн</p>
+    <input type="number" id="depositAmount" placeholder="Сума для поповнення">
+    <button onclick="bankAccount.deposit()">Поповнити рахунок</button>
+    <input type="number" id="withdrawAmount" placeholder="Сума для зняття">
+    <button onclick="bankAccount.withdraw()">Отримати готівку</button>
+
+    <!--2-->
+    <h2>Погода</h2>
+    <input type="number" id="temperatureInput" placeholder="Температура">
+    <button onclick="weather.checkTemperature()">Перевірити температуру</button>
+    <p id="weatherMessage"></p>
+
+    <!--3-->
+    <h2>Авторизація</h2>
+    <input type="email" id="emailInput" placeholder="Email">
+    <input type="password" id="passwordInput" placeholder="Пароль">
+    <button onclick="user.login()">Увійти</button>
+
+    <!--4-->
+    <h2>Фільм</h2>
+    <input type="text" id="movieTitle" placeholder="Назва фільму">
+    <input type="text" id="movieDirector" placeholder="Режисер">
+    <input type="number" id="movieYear" placeholder="Рік випуску">
+    <input type="number" id="movieRating" placeholder="Рейтинг">
+    <button onclick="movie.checkRating()">Перевірити рейтинг</button>
+    <p id="movieTitleOutput"></p>
+
+</body>
+</html>
